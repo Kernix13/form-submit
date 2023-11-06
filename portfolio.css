@@ -1080,7 +1080,7 @@ div>.profile-pic {
 /* Contact Form Styles */
 .contact-form {
   margin: 0 auto;
-  width: 320px;
+  width: 20rem;
 }
 
 .form-group {
@@ -1142,8 +1142,8 @@ input[type="email"]::placeholder {
 
 .submit-btn:focus {
   border: 2px solid var(--footer-hover);
-  border: 2px solid rgba(211, 157, 58, 0.7);
-  box-shadow: 0 8px 12px rgba(211, 157, 58, 0.3);
+  border: 2px solid rgba(211, 157, 58, 0.9);
+  box-shadow: 0 8px 12px rgba(211, 157, 58, 0.4);
 }
 
 .submit-btn:hover {
@@ -1155,7 +1155,7 @@ input[type="email"]::placeholder {
 @media (min-width: 768px) {
   .contact-form,
   .form-input {
-    width: 400px;
+    width: 25rem;
   }
 }
 
