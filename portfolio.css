@@ -1077,6 +1077,88 @@ div>.profile-pic {
   content: '\201D';
 }
 
+/* Contact Form Styles */
+.contact-form {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.form-group {
+  display: block;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+}
+
+.form-group label {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  color: var(--dark);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 0.75em 1.25em 0.75em 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 200ms linear;
+  width: 320px;
+} 
+
+textarea.form-input {
+  height: 10em;
+}
+
+textarea.form-input:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  box-shadow: 0 4px 8px 0 1px solid rgba(0, 0, 0, 0.9);
+  background-color: var(--color-lite);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.85;
+}
+
+.submit-btn {
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid var(--footer-hover);
+  border: 2px solid rgba(211, 157, 58, 0.5);
+  outline: none;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.submit-btn:focus {
+  border: 2px solid var(--footer-hover);
+  border: 2px solid rgba(211, 157, 58, 0.7);
+  box-shadow: 0 8px 12px rgba(211, 157, 58, 0.3);
+}
+
+.submit-btn:hover {
+  color: #fff;
+  background-color: var(--footer-hover);
+  transition: color 400ms ease, border 500ms ease, background-color 500ms ease;
+}
+
+@media (min-width: 768px) {
+  .contact-form,
+  .form-input {
+    width: 400px;
+  }
+}
+
 @media (min-width: 962px) {
   .section-header-row {
     flex-direction: row;
@@ -1218,44 +1300,3 @@ kbd {
   color: var(--blue);
 }
 
-/* Contact Form Styles */
-// form {
-//   display: block;
-//   margin: 0 auto;
-// }
-.form-group {
-  display: block;
-  margin: 0 auto 1.5rem;
-  padding: 0;
-}
-label {
-  display: block;
-  margin-bottom: 0.5rem;;
-}
-.form-input {
-  outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  padding: 0.75em 1.25em 0.75em 0.25em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: all 200ms linear;
-}
-
-input[type="text"]::placeholder, input[type="email"]::placeholder {
-  font-family: "Open Sans", sans-serif;
-  opacity: 0.85;
-}
-
-.submit-btn {
-  font-family: "Open Sans", sans-serif;
-  border: 2px solid var(--footer-hover);
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-}
-
-.submit-btn:hover {
-  color: #fff;
-  background-color: var(--footer-hover);
-  transition: color 500ms ease, background-color 500ms ease;
-}

@@ -9,26 +9,30 @@
 </head>
 
 <body>
-  <form action="/success" name="contact" method="POST" data-netlify="true">
+  <section class="contact" id="conta">
+    <div class="container">
+      <form class="contact-form" action="/success" name="contact" method="POST" data-netlify="true">
 
-    <div class="form-group">
-      <label>Your Name: </label>
-      <input type="text" name="name" class="form-input" placeholder="Name" />
-    </div>
-    <div class="form-group">
-      <label>Your Email: </label>
-      <input type="email" name="email" class="form-input" placeholder="Email address" />
-    </div>
-    <div class="form-group">
-      <label>Message: </label>
-      <textarea name="message" class="form-input"></textarea>
-    </div>
+        <div class="form-group">
+          <label>Name: </label>
+          <input type="text" name="name" class="form-input" placeholder="Full name" />
+        </div>
+        <div class="form-group">
+          <label>Email: </label>
+          <input type="email" name="email" class="form-input" placeholder="Email address" />
+        </div>
+        <div class="form-group">
+          <label>Message: </label>
+          <textarea name="message" class="form-input"></textarea>
+        </div>
 
-    <div class="form-group-btn">
-      <button class="submit-btn" type="submit">SEND</button>
-    </div>
+        <div class="form-group-btn">
+          <button class="submit-btn" type="submit">SEND</button>
+        </div>
 
-  </form>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>
