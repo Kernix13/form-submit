@@ -28,7 +28,7 @@ Starting with your next site deploy, Netlify will automatically scan your deploy
 
 ### HTML forms
 
-Once you enable form detection, add an HTML form to your site with a `data-netlify="true"` or a netlify attribute in the `<form>` tag. Deploy your site with that form included and you can start receiving submissions in your Netlify site admin panel.
+Once you enable form detection, add an HTML form to your site with a `data-netlify="true"` or a `netlify` attribute in the `<form>` tag. Deploy your site with that form included and you can start receiving submissions in your Netlify site admin panel.
 
 Your form’s `name` attribute determines what we call the form in the Netlify UI. If you have more than one form on a site, each form should have a different `name` attribute.
 
